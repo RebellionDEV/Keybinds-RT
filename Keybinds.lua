@@ -5,15 +5,15 @@ ui.add_colorpicker("Color")
 local font = render.setup_font("Verdana", 12, fontflags.noantialiasing)
 
 local allBinds = {
-    { name = "Double Tap", active = keybinds.double_tap, alpha = 0, y = 0 },
-    { name = "Hide Shots", active = keybinds.hide_shots, alpha = 0, y = 0 },
-    { name = "Anti-aim inverter", active = keybinds.flip_desync, alpha = 0, y = 0 },
-    { name = "Slow walk", active = keybinds.slowwalk, alpha = 0, y = 0 },
+    { name = "Doubletap", active = keybinds.double_tap, alpha = 0, y = 0 },
+    { name = "Onshot", active = keybinds.hide_shots, alpha = 0, y = 0 },
+    { name = "Inverter", active = keybinds.flip_desync, alpha = 0, y = 0 },
+    { name = "Slowwalk", active = keybinds.slowwalk, alpha = 0, y = 0 },
     { name = "Thirdperson", active = keybinds.thirdperson, alpha = 0, y = 0 },
-    { name = "Minimum damage", active = keybinds.damage_override, alpha = 0, y = 0 },
+    { name = "Damage Override", active = keybinds.damage_override, alpha = 0, y = 0 },
     { name = "Automatic peek", active = keybinds.automatic_peek, alpha = 0, y = 0 },
-    { name = "Force body aim", active = keybinds.body_aim, alpha = 0, y = 0 },
-    { name = "Force safe points", active = keybinds.safe_points, alpha = 0, y = 0 },
+    { name = "Body aim", active = keybinds.body_aim, alpha = 0, y = 0 },
+    { name = "Safe points", active = keybinds.safe_points, alpha = 0, y = 0 },
 }
 
 local function modeToString(mode)
