@@ -1,6 +1,6 @@
 ui.add_sliderint("X", 0, engine.get_screen_width())
 ui.add_sliderint("Y", 0, engine.get_screen_height())
-ui.add_colorpicker("Color")
+ui.add_colorpicker("Keybinds Color")
 
 local font = render.setup_font("Verdana", 12, fontflags.noantialiasing)
 
@@ -26,7 +26,7 @@ cheat.RegisterCallback("on_paint", function()
     local bindPosition = { ui.get_int("X"), ui.get_int("Y") }
     local bindSize = { 165, 21 }
     local bindOffset = 0
-    local color = ui.get_color("Color")
+    local color = ui.get_color("Keybinds Color")
 
     render.rect_filled(bindPosition[1], bindPosition[2], bindSize[1], bindSize[2], color.new(0,0,0,170))
     render.rect_filled(bindPosition[1], bindPosition[2], bindSize[1], 1, color.new(color:r(),color:g(),color:b(), 255))
